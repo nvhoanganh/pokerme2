@@ -1,16 +1,15 @@
 import App from './App.svelte';
 import firebase from 'firebase/app';
 
-
 const fconfig = {
-	apiKey: 'AIzaSyAeX9yBT_B_sxUoFDWaZFfGk2_Riv8OSzQ',
-	authDomain: 'pokerme2-53a08.firebaseapp.com',
-	databaseURL: 'https://pokerme2-53a08.firebaseio.com',
-	projectId: 'pokerme2-53a08',
-	storageBucket: 'pokerme2-53a08.appspot.com',
-	messagingSenderId: '529088177270',
-	appId: '1:529088177270:web:728e3a3f3a5fda2c206b57',
-	measurementId: 'G-3Q36TV8C36',
+	apiKey: 'AIzaSyAJWIkgMLP2P-Tep8wJgunDIMyyVBhw4Ns',
+	authDomain: 'pokerme3-eb529.firebaseapp.com',
+	databaseURL: 'https://pokerme3-eb529.firebaseio.com',
+	projectId: 'pokerme3-eb529',
+	storageBucket: 'pokerme3-eb529.appspot.com',
+	messagingSenderId: '1049909690531',
+	appId: '1:1049909690531:web:dff08d68feb9153e793f16',
+	measurementId: 'G-2W9E6B0CH4',
 };
 
 firebase.initializeApp(fconfig);
