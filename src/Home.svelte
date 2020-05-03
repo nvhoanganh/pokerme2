@@ -85,8 +85,8 @@
 <div class="text-3xl py-8">Previous Sessions</div>
 <ol>
   {#each sessions as item}
-    <li>
-      {item.createdDate.toDate().toString()}
+    <li class="py-3">
+      {item.createdDate.toDate().toLocaleString()}
       <button
         on:click={() => viewSession(item.id)}
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4
