@@ -38,21 +38,26 @@
   }
 </script>
 
-<p>
-  {#if user}
-    <button on:click={logout}>Log out</button>
-    <div>
-      <button on:click={createSession}>Create Session</button>
-    </div>
-  {:else}
-    <button on:click={login}>Log in</button>
-  {/if}
-</p>
-<div>
-  <div class="text-3xl">Previous Stories</div>
-  <ol>
-    <li>story 1</li>
-    <li>story 2</li>
-  </ol>
-
-</div>
+{#if user}
+  <button
+    on:click={logout}
+    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+    Logout
+  </button>
+  <button
+    on:click={createSession}
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Create Session
+  </button>
+{:else}
+  <button
+    on:click={login}
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Login
+  </button>
+{/if}
+<div class="text-3xl py-8">Previous Stories</div>
+<ol>
+  <li>story 1</li>
+  <li>story 2</li>
+</ol>
